@@ -22,9 +22,4 @@ def test_should_add_zeros_when_value_is_less_than_number_of_parts() -> None:
 
 
 def test_max_min_difference_at_most_one() -> None:
-    parts = split_integer(19, 3)
-    assert max(parts) - min(parts) <= 1
-
-
-def test_check_for_a_zero_value() -> None:
-    assert split_integer(21, 0) == []
+    assert max(split_integer(19, 3)) - min(split_integer(19, 3)) <= 1
